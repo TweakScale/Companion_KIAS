@@ -47,6 +47,9 @@
     <Reference Include="KIS">
       <HintPath>..\..\..\..\..\..\LIB\plugins\KIS.dll</HintPath>
     </Reference>
+    <Reference Include="Scale">
+      <HintPath>..\..\..\..\..\..\LIB\plugins\Scale.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

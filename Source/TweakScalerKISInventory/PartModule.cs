@@ -90,7 +90,11 @@ namespace TweakScaleCompanion_KIS
 			KIS.ModuleKISInventory prefab = this.part.partInfo.partPrefab.Modules.GetModule<KIS.ModuleKISInventory>();
 			KIS.ModuleKISInventory part = this.part.Modules.GetModule<KIS.ModuleKISInventory>();
 
+			TweakScale.TweakScale ts_prefab = this.part.partInfo.partPrefab.Modules.GetModule<TweakScale.TweakScale>();
+			TweakScale.TweakScale ts_part = this.part.Modules.GetModule<TweakScale.TweakScale>();
+
 			part.maxVolume = prefab.maxVolume * factor.absolute.cubic;
+			ts_part.DryCost = (float)(ts_prefab.DryCost * factor.absolute.cubic);
 			if (this.increaseSlotsNumber)
 			{
 				//part.slotSize = prefab.slotSize;
@@ -100,8 +104,10 @@ namespace TweakScaleCompanion_KIS
 				int slotsCount = part.slotsX * part.slotsY;
 				if (slotsCount > prefab.slotsX * prefab.slotsY)
 				{
-					this.part.partInfo.cost += (float)(slotsCount * (0.01 * this.part.partInfo.cost)); // Add 1% of cost penalty per slot
-					part.maxVolume -= (float)(slotsCount * (0.001 * part.maxVolume));                  // Reduce volume by 0.1% per slot
+					Log.dbg("before {0} {1}", part.maxVolume, ts_part.DryCost);
+					part.maxVolume -= (float)(slotsCount * (0.0005 * part.maxVolume));     // Reduce volume by 0.05% per slot
+					ts_part.DryCost += (float)(slotsCount * (0.001 * ts_part.DryCost));		// Add 0.1% of cost penalty per slot
+					Log.dbg("after {0} {1}", part.maxVolume, ts_part.DryCost);
 				}
 			}
 			else
@@ -113,7 +119,7 @@ namespace TweakScaleCompanion_KIS
 
 			// FIXME: Resize the Inventory Window size!
 
-			Log.dbg("Current size : {0} maxVolume, {1} slotsX, {2} slotsX, {3} cost", part.maxVolume, part.slotsX, part.slotsY, this.part.partInfo.cost);
+			Log.dbg("Current size : {0} maxVolume, {1} slotsX, {2} slotsX, {3} dry cost; {4} currentScale; {5} defaultScale", part.maxVolume, part.slotsX, part.slotsY, ts_part.DryCost, ts_part.currentScale, ts_part.defaultScale);
 		}
 
 		#endregion
