@@ -23,6 +23,12 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory System (KIS).
 
 **TweakScale Companion for Kerbal Inventory System** adds (up to date) [TweakScale /L](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-ksp-141-tweakscale-under-lisias-management-24310-2019-1030/) support for ( surprisingly :P ) [Kerbal Inventory System (KIS)](https://forum.kerbalspaceprogram.com/index.php?/topic/149848-minimum-ksp-version-18-kerbal-inventory-system-kis-v125/).
 
+### How to Use
+
+There's an option, when scaling Containers, to select scaling only the Volune or also the number of slots on the container.
+
+When scaling the number of slots, there's a penanlty on cost and volume due the extra hardware needed to accommodate the extra slots.
+
 
 ## Installation
 
