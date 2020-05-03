@@ -1,0 +1,29 @@
+{
+    "spec_version"     : "v1.2",
+    "$kref"            : "#/ckan/spacedock/127",
+    "$vref"            : "#/ckan/ksp-avc",
+    "identifier"       : "TweakScaleCompanion_KIS",
+    "name"             : "TweakScale Companion for Kerbal Inventory System (KIS)",
+    "abstract"         : ""
+    "license"          : "GPL-2.0",
+    "release_status"   : "development",
+    "x_netkan_force_v" : true,
+    "author": [
+        "LisiasT"
+    ],
+    "install" : [
+        {
+            "file" : "GameData/TweakScaleCompanions/KIS",
+            "install_to" : "GameData/TweakScaleCompanios/KIS"
+        }
+    ],
+    "resources": {
+        "homepage":   "https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*",
+        "repository": "https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS"
+    },
+    "depends" : [
+        { "name" : "ModuleManager", "min_version" : "2.7.1" },
+        { "name" : "TweakScaleCore", "min_version" : "2.4.4" },
+        { "name" : "KIS" }
+    ]
+}
