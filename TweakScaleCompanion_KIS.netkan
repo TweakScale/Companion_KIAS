@@ -13,12 +13,12 @@
     ],
     "install" : [
         {
-            "file" : "GameData/TweakScaleCompanions/KIS",
-            "install_to" : "GameData/TweakScaleCompanios/KIS"
+            "file" : "GameData/TweakScaleCompanion/KIS",
+            "install_to" : "GameData/TweakScaleCompanion/KIS"
         }
     ],
     "resources": {
-        "homepage":   "https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*",
+        "homepage":   "https://forum.kerbalspaceprogram.com/index.php?/topic/192216-*",
         "repository": "https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS"
     },
     "depends" : [
