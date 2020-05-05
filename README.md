@@ -5,7 +5,7 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory System (KIS).
 
 ## In a Hurry
 
-* [Source](https://github.com/net-lisias-ksp/TweakScaleCompanion_KAX)
+* [Source](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS)
 	+ [Issue Tracker](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS/issues)
 * Documentation
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/192216-tweakscale-companion-program/)
@@ -65,7 +65,7 @@ You have the option to choose the license that best suits you (when applicable).
 See [NOTICE](./NOTICE) for further copyright and trademarks notices.
 
 
-## Refences
+## References
 
 * TweakScale /L ([LisiasT](https://forum.kerbalspaceprogram.com/index.php?/profile/187168-lisias/))
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-ksp-141-tweakscale-under-lisias-management-24310-2019-1030/)

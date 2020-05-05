@@ -44,7 +44,7 @@ The following file layout must be present after installation:
 				NOTICE
 				README.md
 				[patches]
-					...				
+					...
 			[...]
 	KSP.log
 	PastDatabase.cfg
