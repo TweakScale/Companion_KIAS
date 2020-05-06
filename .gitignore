@@ -1,5 +1,6 @@
 /bin
 **/obj
 /*.user
-GameData
+GameData/*
+Source/*
 .vs
