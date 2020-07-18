@@ -124,7 +124,7 @@ namespace TweakScaleCompanion_KIS
 						if (containsInventoryScaler && (null != (due = this.checkForInventory(prefab))))
 						{
 							Log.info("Removing {0} support for {1} ({2}) due {3}.", SCALERINVENTORY_MODULE_NAME, p.name, p.title, due);
-							prefab.Modules.Remove(prefab.Modules[SCALERINVENTORY_MODULE_NAME]);
+							prefab.RemoveModule(prefab.Modules[SCALERINVENTORY_MODULE_NAME]);
 						}
 						else ++parts_with_inventory_count;
 
@@ -162,7 +162,6 @@ namespace TweakScaleCompanion_KIS
 			Log.dbg("Checking {0} Sanity for {1} at {2}", SCALERINVENTORY_MODULE_NAME, p.name, (null != p.partInfo ? p.partInfo.partUrl : "<no partInfo>"));
 
 			if (!p.Modules.Contains(INVENTORY_MODULE_NAME)) return MSG_PART_DOES_NOT_NEED;
-			if (p.name.StartsWith("kerbalEVA")) return MSG_PART_NOT_SUPPORTED;
 			if (p.name.StartsWith("kerbalEVA")) return MSG_PART_NOT_SUPPORTED;
 			if (p.name.StartsWith("maleEVA")) return MSG_PART_NOT_SUPPORTED;
 			if (p.name.StartsWith("femaleEVA")) return MSG_PART_NOT_SUPPORTED;
