@@ -20,6 +20,7 @@
 	along with TweakScaleCompanion_KIS. If not, see <https://www.gnu.org/licenses/>.
 
 */
+using System.Linq;
 using UnityEngine;
 
 namespace TweakScaleCompanion.KIS
@@ -41,6 +42,15 @@ namespace TweakScaleCompanion.KIS
 				Log.error(e.ToShortMessage());
 				KSPe.Common.Dialogs.ShowStopperAlertBox.Show(e);
 			}
+
+			this.checkDependencies();
+		}
+
+		private void checkDependencies()
+		{
+			AssemblyLoader.LoadedAssembly assembly = AssemblyLoader.loadedAssemblies.Where(a => a.assembly.GetName().Name == "TweakScale").First();
+			if (-1 == assembly.assembly.GetName().Version.CompareTo(new System.Version(2, 4, 4)) )
+				GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.4 or superior");
 		}
 	}
 }
