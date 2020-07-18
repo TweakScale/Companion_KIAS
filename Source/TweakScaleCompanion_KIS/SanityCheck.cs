@@ -32,7 +32,7 @@ namespace TweakScaleCompanion.KIS
 	{
 		private static readonly int WAIT_ROUNDS = 120; // @60fps, would render 2 secs.
 
-		private const string INVENTORY_MODULE_NAME = "KISInventory";
+		private const string INVENTORY_MODULE_NAME = "ModuleKISInventory";
 		private const string SCALERINVENTORY_MODULE_NAME = "TweakScalerKISInventory";
 
 		internal static bool isConcluded = false;
@@ -98,6 +98,7 @@ namespace TweakScaleCompanion.KIS
 						{
 							containsInventoryScaler = prefab.Modules.Contains(SCALERINVENTORY_MODULE_NAME);
 							++total_count;
+							if (containsInventoryScaler) ++parts_with_inventory_count;
 							break;  // Yeah. This while stunt was done just to be able to do this. All the rest is plain clutter! :D 
 						}
 						catch (Exception e)
@@ -125,9 +126,8 @@ namespace TweakScaleCompanion.KIS
 						{
 							Log.info("Removing {0} support for {1} ({2}) due {3}.", SCALERINVENTORY_MODULE_NAME, p.name, p.title, due);
 							prefab.RemoveModule(prefab.Modules[SCALERINVENTORY_MODULE_NAME]);
+							--parts_with_inventory_count;
 						}
-						else ++parts_with_inventory_count;
-
 					}
 					catch (Exception e)
 					{
