@@ -22,9 +22,9 @@
 */
 using System;
 using TweakScale;
+using KISP = KIS; // KIS Plugin
 
-namespace TweakScaleCompanion_KIS
-
+namespace TweakScaleCompanion.KIS
 {
 	public class TweakScalerKISInventory : PartModule
 	{
@@ -87,8 +87,8 @@ namespace TweakScaleCompanion_KIS
 		{
 			Log.dbg("OnRescale {0}:{1:X} to {2}", this.name, this.part.GetInstanceID(), factor.ToString());
 
-			KIS.ModuleKISInventory prefab = this.part.partInfo.partPrefab.Modules.GetModule<KIS.ModuleKISInventory>();
-			KIS.ModuleKISInventory part = this.part.Modules.GetModule<KIS.ModuleKISInventory>();
+			KISP.ModuleKISInventory prefab = this.part.partInfo.partPrefab.Modules.GetModule<KISP.ModuleKISInventory>();
+			KISP.ModuleKISInventory part = this.part.Modules.GetModule<KISP.ModuleKISInventory>();
 
 			TweakScale.TweakScale ts_prefab = this.part.partInfo.partPrefab.Modules.GetModule<TweakScale.TweakScale>();
 			TweakScale.TweakScale ts_part = this.part.Modules.GetModule<TweakScale.TweakScale>();
@@ -105,7 +105,7 @@ namespace TweakScaleCompanion_KIS
 				if (slotsCount > prefab.slotsX * prefab.slotsY)
 				{
 					Log.dbg("before {0} {1}", part.maxVolume, ts_part.DryCost);
-					part.maxVolume -= (float)(slotsCount * (0.0005 * part.maxVolume));     // Reduce volume by 0.05% per slot
+					part.maxVolume -= (float)(slotsCount * (0.0005 * part.maxVolume));		// Reduce volume by 0.05% per slot
 					ts_part.DryCost += (float)(slotsCount * (0.001 * ts_part.DryCost));		// Add 0.1% of cost penalty per slot
 					Log.dbg("after {0} {1}", part.maxVolume, ts_part.DryCost);
 				}

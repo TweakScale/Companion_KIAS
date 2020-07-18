@@ -22,7 +22,7 @@
 */
 using UnityEngine;
 
-namespace TweakScaleCompanion_KIS
+namespace TweakScaleCompanion.KIS
 {
 	[KSPAddon(KSPAddon.Startup.Instantly, true)]
 	internal class Startup : MonoBehaviour

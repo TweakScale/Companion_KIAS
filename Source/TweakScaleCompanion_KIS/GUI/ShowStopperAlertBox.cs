@@ -22,7 +22,7 @@
 */
 using UnityEngine;
 
-namespace TweakScaleCompanion_KIS.GUI
+namespace TweakScaleCompanion.KIS.GUI
 {
 	internal static class ShowStopperAlertBox
 	{

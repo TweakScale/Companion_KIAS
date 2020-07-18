@@ -10,7 +10,7 @@
 <#@ output extension=".cs" #>
 <#@ import namespace="System.IO" #>
 <#
-	string PROJECT_NAME = "TweakScaleCompanion_KIS";
+	string PROJECT_NAME = "TweakScaleCompanion.KIS";
 	int major = 0;
 	int minor = 0;
 	int patch = 0;

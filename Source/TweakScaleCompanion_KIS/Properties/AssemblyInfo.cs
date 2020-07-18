@@ -36,6 +36,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion(TweakScaleCompanion_KIS.Version.Number)]
-[assembly: AssemblyFileVersion(TweakScaleCompanion_KIS.Version.Number)]
-[assembly: KSPAssembly("TweakScaleCompanion_KIS", TweakScaleCompanion_KIS.Version.major, TweakScaleCompanion_KIS.Version.minor)]
+[assembly: AssemblyVersion(TweakScaleCompanion.KIS.Version.Number)]
+[assembly: AssemblyFileVersion(TweakScaleCompanion.KIS.Version.Number)]
+[assembly: KSPAssembly("TweakScaleCompanion_KIS", TweakScaleCompanion.KIS.Version.major, TweakScaleCompanion.KIS.Version.minor)]

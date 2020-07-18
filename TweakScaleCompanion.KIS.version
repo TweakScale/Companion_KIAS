@@ -1,6 +1,6 @@
 {
 	"NAME"		: "TweakScale Companion for Kerbal Inventory System (KIS)",
-	"URL"		: "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIS/master/TweakScaleCompanion_KIS.version",
+	"URL"		: "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIS/master/TweakScaleCompanion.KIS.version",
 	"DOWNLOAD"	: "https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS/releases",
 	"CHANGE_LOG"	: "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIS/master/CHANGE_LOG.md",
 	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIS/master/CHANGES.md",

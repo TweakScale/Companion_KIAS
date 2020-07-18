@@ -25,7 +25,7 @@ using System.Collections;
 
 using UnityEngine;
 
-namespace TweakScaleCompanion_KIS
+namespace TweakScaleCompanion.KIS
 {
 	[KSPAddon(KSPAddon.Startup.MainMenu, true)]
 	internal class SanityCheck : MonoBehaviour

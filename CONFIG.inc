@@ -1,6 +1,6 @@
 source ../CONFIG.inc
 
-PACKAGE=TweakScaleCompanion_KIS
+PACKAGE=TweakScaleCompanion.KIS
 TARGETDIR="TweakScaleCompanion/KIS"
 TARGETBINDIR="$TARGETDIR/Plugins"
 PROJECTSDIR="$PACKAGE/"

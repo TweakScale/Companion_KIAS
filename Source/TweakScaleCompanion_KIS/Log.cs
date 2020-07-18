@@ -21,7 +21,7 @@ using System.Diagnostics;
 using System.Collections.Generic;
 #endif
 
-namespace TweakScaleCompanion_KIS
+namespace TweakScaleCompanion.KIS
 {
 	public static class Log
 	{
