@@ -50,6 +50,10 @@ namespace TweakScaleCompanion.KIS
 		{
 			Log.dbg("OnStart {0}:{1:X} {2}", this.name, this.part.GetInstanceID(), state);
 			base.OnStart(state);
+
+			BaseField field = this.Fields["increaseSlotsNumber"];
+			UI_Control uiControl = (field.uiControlEditor as UI_Toggle);
+			uiControl.onFieldChanged += this.OnIncreaseSlotsNumberChange;
 		}
 
 		public override void OnCopy(PartModule fromModule)
@@ -120,6 +124,18 @@ namespace TweakScaleCompanion.KIS
 			// FIXME: Resize the Inventory Window size!
 
 			Log.dbg("Current size : {0} maxVolume, {1} slotsX, {2} slotsX, {3} dry cost; {4} currentScale; {5} defaultScale", part.maxVolume, part.slotsX, part.slotsY, ts_part.DryCost, ts_part.currentScale, ts_part.defaultScale);
+		}
+
+		#endregion
+
+
+		#region Event Handler
+
+		private void OnIncreaseSlotsNumberChange(BaseField field, Object obj)
+		{
+			TweakScale.TweakScale ts_part = this.part.Modules.GetModule<TweakScale.TweakScale>();
+			ScalingFactor current = ts_part.ScalingFactor;
+			this.OnRescale(current);
 		}
 
 		#endregion
