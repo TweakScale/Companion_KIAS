@@ -51,11 +51,11 @@ namespace TweakScaleCompanion.KIS
 		{
 			try
 			{
-				AssemblyLoader.LoadedAssembly assembly = AssemblyLoader.loadedAssemblies.Where(a => a.assembly.GetName().Name == "TweakScale").First();
+				AssemblyLoader.LoadedAssembly assembly = AssemblyLoader.loadedAssemblies.Where(a => a.assembly.GetName().Name == "Scale").First();
 				if (-1 == assembly.assembly.GetName().Version.CompareTo(new System.Version(2, 4, 4)) )
 					GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.4 or superior");
-				}
-			catch (InvalidOperationException e)
+			}
+			catch (Exception e) when (e is NullReferenceException || e is InvalidOperationException)
 			{
 				GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.4 or superior");
 			}
