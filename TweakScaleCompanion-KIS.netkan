@@ -5,7 +5,7 @@
     "identifier"       : "TweakScaleCompanion_KIS",
     "name"             : "TweakScale Companion for Kerbal Inventory System (KIS)",
     "abstract"         : ""
-    "license"          : "GPL-2.0",
+    "license"          : [ "GPL-2.0", "restricted" ],
     "release_status"   : "development",
     "x_netkan_force_v" : true,
     "author": [
