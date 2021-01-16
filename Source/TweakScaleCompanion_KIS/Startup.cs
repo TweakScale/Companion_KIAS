@@ -36,7 +36,7 @@ namespace TweakScaleCompanion.KIS
 
 			try
 			{
-				KSPe.Util.Installation.Check<Startup>(System.IO.Path.Combine("TweakScaleCompanion", "KIS"));
+				KSPe.Util.Installation.Check<Startup>("TweakScaleCompanion_KIS", "KIS", Version.Vendor);
 			}
 			catch (KSPe.Util.InstallmentException e)
 			{
