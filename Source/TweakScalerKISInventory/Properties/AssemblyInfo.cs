@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TweakScalerKISInventory")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("L Aerospace/KSP Division")]
-[assembly: AssemblyProduct("TweakScale Companion for KIS")]
-[assembly: AssemblyCopyright("Copyright © 2020 LisiasT")]
-[assembly: AssemblyTrademark("TweakScale™, TweakScale Companion™ by LisiasT")]
+[assembly: AssemblyCompany(TweakScaleCompanion.KIS.LegalMamboJambo.Company)]
+[assembly: AssemblyProduct(TweakScaleCompanion.KIS.LegalMamboJambo.Product)]
+[assembly: AssemblyCopyright(TweakScaleCompanion.KIS.LegalMamboJambo.Copyight)]
+[assembly: AssemblyTrademark(TweakScaleCompanion.KIS.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

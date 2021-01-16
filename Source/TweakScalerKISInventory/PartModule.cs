@@ -1,6 +1,6 @@
 ﻿/*
 	This file is part of TweakScalerKISInventory, a component of TweakScaleCompanion_KIS
-	© 2020 LisiasT : http://lisias.net <support@lisias.net>
+	© 2020-21 LisiasT : http://lisias.net <support@lisias.net>
 
 	TweakScaleCompanion_KIS is double licensed, as follows:
 
