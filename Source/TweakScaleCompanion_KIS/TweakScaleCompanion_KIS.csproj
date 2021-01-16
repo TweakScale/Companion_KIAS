@@ -30,19 +30,19 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="KSPe.Light.TweakScale">
-      <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +55,7 @@
     <Compile Include="Log.cs" />
     <Compile Include="GUI\ShowStopperAlertBox.cs" />
     <Compile Include="GUI\UnmetRequirementsShowStopperAlertBox.cs" />
+    <Compile Include="Properties\LegalMamboJambo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Version.tt">
