@@ -44,11 +44,11 @@
     <Reference Include="KSPe.Light.TweakScale">
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
     </Reference>
-    <Reference Include="KIS">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KIS.dll</HintPath>
-    </Reference>
     <Reference Include="Scale">
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale.dll</HintPath>
+    </Reference>
+    <Reference Include="KIS.130">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KIS.130.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
