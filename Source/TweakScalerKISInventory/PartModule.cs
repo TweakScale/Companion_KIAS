@@ -33,7 +33,7 @@ namespace TweakScaleCompanion.KIS
 
 		[KSPField(isPersistant = true, guiActiveEditor = true, guiName = "Inventory Scale Type")]
 		[UI_Toggle(disabledText = "Resize Volume Only", enabledText = "Increase Slot Qtd.", scene = UI_Scene.Editor)]
-		public bool increaseSlotsNumber = false; // TODO update the part when changed
+		public bool changeSlotsQuantity = false;
 
 		#endregion
 
@@ -53,7 +53,7 @@ namespace TweakScaleCompanion.KIS
 
 			BaseField field = this.Fields["increaseSlotsNumber"];
 			UI_Control uiControl = (field.uiControlEditor as UI_Toggle);
-			uiControl.onFieldChanged += this.OnIncreaseSlotsNumberChange;
+			uiControl.onFieldChanged += this.OnChangeSlotsQuantity;
 		}
 
 		public override void OnCopy(PartModule fromModule)
@@ -99,7 +99,7 @@ namespace TweakScaleCompanion.KIS
 
 			part.maxVolume = prefab.maxVolume * factor.absolute.cubic;
 			ts_part.DryCost = (float)(ts_prefab.DryCost * factor.absolute.cubic);
-			if (this.increaseSlotsNumber)
+			if (this.changeSlotsQuantity)
 			{
 				//part.slotSize = prefab.slotSize;
 				part.slotsX = (int)Math.Floor(prefab.slotsX * factor.absolute.linear);
@@ -131,7 +131,7 @@ namespace TweakScaleCompanion.KIS
 
 		#region Event Handler
 
-		private void OnIncreaseSlotsNumberChange(BaseField field, Object obj)
+		private void OnChangeSlotsQuantity(BaseField field, Object obj)
 		{
 			TweakScale.TweakScale ts_part = this.part.Modules.GetModule<TweakScale.TweakScale>();
 			ScalingFactor current = ts_part.ScalingFactor;
