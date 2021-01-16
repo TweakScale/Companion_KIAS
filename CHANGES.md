@@ -1,5 +1,9 @@
 # TweakScale Companion :: Kerbal Inventory System (KIS) :: Changes
 
+* 2021-0116: 0.1.0.0 RC (LisiasT) for KSP >= 1.2.2
+	+ TweakScale 2.4.4.x related updates
+	+ Some missed adjustments on the scaling process.
+	+ Promoting to Release Candidate!! :)
 * 2020-0905: 0.0.2.1 BETA (LisiasT) for KSP >= 1.2.2
 	+ Fixing the dependency check code.
 * 2020-0718: 0.0.2.0 BETA (LisiasT) for KSP >= 1.2.2
