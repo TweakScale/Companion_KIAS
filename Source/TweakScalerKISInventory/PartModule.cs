@@ -101,7 +101,7 @@ namespace TweakScaleCompanion.KIS
 			ts_part.DryCost = (float)(ts_prefab.DryCost * factor.absolute.cubic);
 			if (this.changeSlotsQuantity)
 			{
-				//part.slotSize = prefab.slotSize;
+				part.slotSize = prefab.slotSize;
 				part.slotsX = (int)Math.Floor(prefab.slotsX * factor.absolute.linear);
 				part.slotsY = (int)Math.Floor(prefab.slotsY * factor.absolute.linear);
 
@@ -116,7 +116,7 @@ namespace TweakScaleCompanion.KIS
 			}
 			else
 			{
-				//part.slotSize = (int)Math.Floor(prefab.slotSize * factor.absolute.linear);
+				part.slotSize = (int)Math.Floor(prefab.slotSize * factor.absolute.linear);
 				part.slotsX = prefab.slotsX;
 				part.slotsY = prefab.slotsY;
 			}
@@ -136,6 +136,7 @@ namespace TweakScaleCompanion.KIS
 			TweakScale.TweakScale ts_part = this.part.Modules.GetModule<TweakScale.TweakScale>();
 			ScalingFactor current = ts_part.ScalingFactor;
 			this.OnRescale(current);
+			GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
 		}
 
 		#endregion
