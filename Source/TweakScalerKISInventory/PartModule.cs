@@ -51,7 +51,7 @@ namespace TweakScaleCompanion.KIS
 			Log.dbg("OnStart {0}:{1:X} {2}", this.name, this.part.GetInstanceID(), state);
 			base.OnStart(state);
 
-			BaseField field = this.Fields["increaseSlotsNumber"];
+			BaseField field = this.Fields["changeSlotsQuantity"];
 			UI_Control uiControl = (field.uiControlEditor as UI_Toggle);
 			uiControl.onFieldChanged += this.OnChangeSlotsQuantity;
 		}
