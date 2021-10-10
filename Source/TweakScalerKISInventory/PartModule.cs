@@ -33,7 +33,7 @@ namespace TweakScaleCompanion.KIS
 
 		[KSPField(isPersistant = true, guiActiveEditor = true, guiName = "Inventory Scale Type")]
 		[UI_Toggle(disabledText = "Resize Volume Only", enabledText = "Increase Slot Qtd.", scene = UI_Scene.Editor)]
-		public bool changeSlotsQuantity = false;
+		public bool changeSlotQuantity = false;
 
 		#endregion
 
