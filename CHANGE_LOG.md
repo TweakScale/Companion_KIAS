@@ -1,7 +1,8 @@
 # TweakScale Companion :: Kerbal Inventory System (KIS) :: Change Log
 
-* 2021-1010: 0.2.0.0 RC (LisiasT) for KSP >= 1.3.0
-	+ Refactoring using the new KSPe.Light.TweakScale v2.4 facilities to allow it to be safely installed on rigs without FS.
+* 2021-1010: 1.0.0.0 (LisiasT) for KSP >= 1.3.0
+	+ TSCo-KIS goes gold!!! **#HURRAY!!**
+	+ Refactoring using the new KSPe.Light.TweakScale v2.4 facilities to allow it to be safely installed on rigs without it.
 		+ Lots of flexibility on packaging in the near future
 	+ Raises the bar to 1.3.0 (something is not coping well on KSP > 1.10, apparently something related to `KSPField`)
 * 2021-0116: 0.1.0.0 RC (LisiasT) for KSP >= 1.2.2
