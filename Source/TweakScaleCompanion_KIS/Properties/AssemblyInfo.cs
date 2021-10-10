@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany(TweakScaleCompanion.KIS.LegalMamboJambo.Company)]
 [assembly: AssemblyProduct(TweakScaleCompanion.KIS.LegalMamboJambo.Product)]
-[assembly: AssemblyCopyright(TweakScaleCompanion.KIS.LegalMamboJambo.Copyight)]
+[assembly: AssemblyCopyright(TweakScaleCompanion.KIS.LegalMamboJambo.Copyright)]
 [assembly: AssemblyTrademark(TweakScaleCompanion.KIS.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
@@ -39,3 +39,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion(TweakScaleCompanion.KIS.Version.Number)]
 [assembly: AssemblyFileVersion(TweakScaleCompanion.KIS.Version.Number)]
 [assembly: KSPAssembly("TweakScaleCompanion_KIS", TweakScaleCompanion.KIS.Version.major, TweakScaleCompanion.KIS.Version.minor)]
+[assembly: KSPAssemblyDependency("KSPe.Light.TweakScale", 2, 4)]

@@ -1,9 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScaleCompanion_KIS", "Source\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj", "{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScalerKISInventory", "Source\TweakScalerKISInventory\TweakScalerKISInventory.csproj", "{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScaleCompanion_KIS", "Source\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj", "{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScalerLoadableSupportKISAPIv1", "Source\TweakScalerLoadableSupportKISAPIv1\TweakScalerLoadableSupportKISAPIv1.csproj", "{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

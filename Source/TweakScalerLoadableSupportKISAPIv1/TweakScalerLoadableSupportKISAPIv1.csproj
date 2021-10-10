@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</ProjectGuid>
+    <ProjectGuid>{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TweakScaleCompanion_KIS</RootNamespace>
-    <AssemblyName>TweakScaleCompanion_KIS</AssemblyName>
+    <RootNamespace>TweakScaleCompanion.KIS</RootNamespace>
+    <AssemblyName>TweakScalerLoadableSupportKISAPIv1</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <BaseIntermediateOutputPath>..\..\obj\TweakScaleCompanion_KIS</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>..\..\obj\TweakScalerLoadableSupportKISAPIv1</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,10 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="KSPe.Light.TweakScale">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\LIB\managed\1.3.0\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -41,24 +37,39 @@
       <HintPath>..\..\..\..\..\..\..\LIB\managed\1.3.0\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="KIS">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KIS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Scale">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Scale_Redist">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale_Redist.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="KSPe.Light.TweakScale">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Version.cs">
-      <DependentUpon>Version.tt</DependentUpon>
-    </Compile>
+    <Compile Include="InventoryScaleEngineImplementation.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="SanityCheck.cs" />
-    <Compile Include="Log.cs" />
-    <Compile Include="GUI\ShowStopperAlertBox.cs" />
-    <Compile Include="GUI\UnmetRequirementsShowStopperAlertBox.cs" />
-    <Compile Include="Properties\LegalMamboJambo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Version.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Version.cs</LastGenOutput>
-    </None>
+    <ProjectReference Include="..\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj">
+      <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
+      <Name>TweakScaleCompanion_KIS</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TweakScalerKISInventory\TweakScalerKISInventory.csproj">
+      <Project>{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}</Project>
+      <Name>TweakScalerKISInventory</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

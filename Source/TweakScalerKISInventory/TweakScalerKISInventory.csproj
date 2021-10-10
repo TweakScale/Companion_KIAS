@@ -29,37 +29,38 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="KSPe.Light.TweakScale">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Scale_Redist">
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale_Redist.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.3.0\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="KSPe.Light.TweakScale">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
-    </Reference>
-    <Reference Include="Scale">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale.dll</HintPath>
-    </Reference>
-    <Reference Include="KIS.130">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KIS.130.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.3.0\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PartModule.cs" />
+    <Compile Include="Contract\KISScaleEngine.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj">
       <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
       <Name>TweakScaleCompanion_KIS</Name>
+      <Private>False</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contract\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
