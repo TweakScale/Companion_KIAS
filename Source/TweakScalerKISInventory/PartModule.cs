@@ -104,6 +104,8 @@ namespace TweakScaleCompanion.KIS.Inventory
 		{
 			Log.dbg("OnRescale {0} to {1}", this.InstanceId, factor.ToString());
 			if (!this.enabled) return;
+			if (null == this.inventoryScaler) return;	// Parts with changing ScaleTypes are triggering OnRescale before OnStart. We don't need to handle that now.
+
 			this.inventoryScaler.ScaleTo(factor);
 			GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
 		}
