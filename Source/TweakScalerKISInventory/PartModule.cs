@@ -43,13 +43,13 @@ namespace TweakScaleCompanion.KIS.Inventory
 
 		public override void OnAwake()
 		{
-			Log.force("OnAwake {0}:{1:X}", this.name, this.part.GetInstanceID());
+			Log.force("OnAwake {0}", this.InstanceId);
 			base.OnAwake();
 		}
 
 		public override void OnStart(StartState state)
 		{
-			Log.dbg("OnStart {0}:{1:X} {2}", this.name, this.part.GetInstanceID(), state);
+			Log.dbg("OnStart {0} {1}", this.InstanceId, state);
 			base.OnStart(state);
 
 			BaseField field = this.Fields["changeSlotQuantity"];
@@ -70,19 +70,19 @@ namespace TweakScaleCompanion.KIS.Inventory
 
 		public override void OnCopy(PartModule fromModule)
 		{
-			Log.dbg("OnCopy {0}:{1:X} from {2:X}", this.name, this.part.GetInstanceID(), fromModule.part.GetInstanceID());
+			Log.dbg("OnCopy {0} from {1:X}", this.InstanceId, fromModule.part.GetInstanceID());
 			base.OnCopy(fromModule);
 		}
 
 		public override void OnLoad(ConfigNode node)
 		{
-			Log.dbg("OnLoad {0}:{1:X} {2}", this.name, this.part.GetInstanceID(), null != node);
+			Log.dbg("OnLoad {0} {1}", this.InstanceId, null != node);
 			base.OnLoad(node);
 		}
 
 		public override void OnSave(ConfigNode node)
 		{
-			Log.dbg("OnSave {0}:{1:X} {2}", this.name, this.part.GetInstanceID(), null != node);
+			Log.dbg("OnSave {0} {1}", this.InstanceId, null != node);
 			base.OnSave(node);
 		}
 
@@ -92,7 +92,7 @@ namespace TweakScaleCompanion.KIS.Inventory
 
 		private void OnDestroy()
 		{
-			Log.dbg("OnDestroy {0}:{1:X}", this.name, this.part.GetInstanceID());
+			Log.dbg("OnDestroy {0}", this.InstanceId);
 			this.inventoryScaler?.Destroy(); this.inventoryScaler = null;
 		}
 
@@ -102,7 +102,7 @@ namespace TweakScaleCompanion.KIS.Inventory
 
 		internal void OnRescale(ScalingFactor factor)
 		{
-			Log.dbg("OnRescale {0}:{1:X} to {2}", this.name, this.part.GetInstanceID(), factor.ToString());
+			Log.dbg("OnRescale {0} to {1}", this.InstanceId, factor.ToString());
 			if (!this.enabled) return;
 			this.inventoryScaler.ScaleTo(factor);
 			GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
@@ -122,6 +122,8 @@ namespace TweakScaleCompanion.KIS.Inventory
 
 		#endregion
 
+		private string _instanceId = null;
+		public string InstanceId => _instanceId??(_instanceId = (string.Format("{0}:{1:X}", this.part.name, this.part.GetInstanceID())));
 		private static readonly KSPe.Util.Log.Logger Log = KSPe.Util.Log.Logger.CreateForType<TweakScalerKISInventory>("TweakScaleCompanion_KIS", "TweakScalerKISInventory");
 	}
 
