@@ -34,7 +34,7 @@ namespace TweakScaleCompanion.KIS.Inventory
 		private void Awake()
 		{
 			if (KSPe.Util.SystemTools.TypeFinder.ExistsByQualifiedName("KISAPIv1.KISAPI"))
-				using (KSPe.Util.SystemTools.Assembly.Loader a = new KSPe.Util.SystemTools.Assembly.Loader(typeof(TweakScaleCompanion.KIS.Startup).Namespace.Replace(".", KSPe.IO.Path.DirectorySeparatorStr)))
+				using (KSPe.Util.SystemTools.Assembly.Loader a = new KSPe.Util.SystemTools.Assembly.Loader(typeof(TweakScaleCompanion.KIAS.Startup).Namespace.Replace(".", KSPe.IO.Path.DirectorySeparatorStr)))
 				{
 					a.LoadAndStartup("TweakScalerLoadableSupportKISAPIv1");
 					OK_TO_GO = true;

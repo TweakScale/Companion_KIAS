@@ -1,12 +1,12 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 source ${SCRIPT_DIR}/../CONFIG.inc
 
-PACKAGE=TweakScaleCompanion.KIS
-TARGETDIR="TweakScaleCompanion/KIS"
+PACKAGE=TweakScaleCompanion.KIAS
+TARGETDIR="TweakScaleCompanion/KIAS"
 TARGETBINDIR="$TARGETDIR/Plugins"
 PROJECTSDIR="$PACKAGE/"
 
-DLLS="TweakScaleCompanion_KIS TweakScalerKISInventory"
+DLLS="TweakScaleCompanion_KIAS TweakScalerKISInventory"
 PD_DLLS="/TweakScalerLoadableSupportKISAPIv1"
 declare -A PD_SUB_RULES=( )
 PD_SUB_DLLS=`{ for K in "${!PD_SUB_RULES[@]}"; do echo $(basename ${PD_SUB_RULES[$K]}); done } | sort -u | tr '\n' ' '`

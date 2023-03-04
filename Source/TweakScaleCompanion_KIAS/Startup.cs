@@ -25,7 +25,7 @@ using System.Linq;
 using KSPe.Annotations;
 using UnityEngine;
 
-namespace TweakScaleCompanion.KIS
+namespace TweakScaleCompanion.KIAS
 {
 	[KSPAddon(KSPAddon.Startup.Instantly, true)]
 	public class Startup : MonoBehaviour
@@ -37,7 +37,7 @@ namespace TweakScaleCompanion.KIS
 
 			try
 			{
-				KSPe.Util.Installation.Check<Startup>("TweakScaleCompanion_KIS", "KIS", Version.Vendor);
+				KSPe.Util.Installation.Check<Startup>();
 			}
 			catch (KSPe.Util.InstallmentException e)
 			{

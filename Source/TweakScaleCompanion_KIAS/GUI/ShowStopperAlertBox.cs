@@ -21,29 +21,25 @@
 
 */
 using UnityEngine;
-using KSPe.UI;
 
-namespace TweakScaleCompanion.KIS.GUI
+namespace TweakScaleCompanion.KIAS.GUI
 {
-    internal class UnmetRequirementsShowStopperAlertBox
-    {
-        private static readonly string MSG = @"Unfortunately TweakScale Companion for Kerbal Inventory System (KIS) is unable to proceed due unmet requiments!
+	internal static class ShowStopperAlertBox
+	{
+		private static readonly string MSG = @"Unfortunately TweakScale Companion for KIS got {0} Exceptions while checking the sanity of your instalment. It's not safe to continue, this will probably corrupt your savegames!
 
-You need to have {0} installed, otherwise this Companion will fail to install itself and KSP will inject bad information on your savegames' KIS parts with TwekScale.
+The KSP.log is listing every compromised part(s) on your installment, look for lines with '[TweakScaleCompanion_KIS] ERROR: ' on the log line. Be aware that the parts being reported are not the culprits, but the Screaming Victims. There's no possible automated fix for these.";
 
-If you decide to proceed, do it with caution - use S.A.V.E. just in case.";
+		private static readonly string AMSG = @"call for help on the TweakScale Companion for KIS thread on the Forum (KSP will close). We will help you on diagnosing the Add'On that is troubling you. Publish your KSP.log on some file share service and mention it on the post";
 
-		private static readonly string AMSG = @"go to TweakScale Companion Program's page, look for the dependencies for KIS, download and install {0} and restart KSP (it will close now)";
-
-		internal static void Show(string failedRequirement)
+		internal static void Show(int failure_count)
 		{
 			KSPe.Common.Dialogs.ShowStopperAlertBox.Show(
-				string.Format(MSG, failedRequirement),
-				string.Format(AMSG, failedRequirement),
+				string.Format(MSG, failure_count),
+				AMSG,
 				() => { Application.OpenURL("https://forum.kerbalspaceprogram.com/index.php?/topic/192216-*"); Application.Quit(); }
 			);
-			Log.detail("\"Houston, we have a Problem!\" about unmet dependencies was displayed");
+			Log.detail("\"Houston, we have a Problem!\" was displayed");
 		}
-    }
+	}
 }
-

@@ -1,4 +1,4 @@
-# TweakScale Companion :: Kerbal Inventory System (KIS)
+# TweakScale Companion :: Kerbal Inventory & Attachment Systems (KIAS)
 
 Adds (up to date) TweakScale /L patches for Kerbal Inventory System - KIS.
 
@@ -8,9 +8,9 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory System - KIS.
 To install, place the GameData folder inside your Kerbal Space Program folder:
 
 * **REMOVE ANY OLD VERSIONS OF THE PRODUCT BEFORE INSTALLING**, including any other fork:
-	+ Delete `<KSP_ROOT>/GameData/TweakScaleCompanion/KIS`
+	+ Delete `<KSP_ROOT>/GameData/TweakScaleCompanion/KIAS`
 * Extract the package's `GameData/` folder into your KSP's as follows:
-	+ `<PACKAGE>/GameData/TweakScaleCompanion/KIS` --> `<KSP_ROOT>/GameData/TweakScaleCompanion`
+	+ `<PACKAGE>/GameData/TweakScaleCompanion/KIAS` --> `<KSP_ROOT>/GameData/TweakScaleCompanion`
 		- Overwrite any preexisting file.
 
 The following file layout must be present after installation:
@@ -38,7 +38,7 @@ The following file layout must be present after installation:
 		...
 		[TweakScaleCompanion]
 			[...]
-			[KIS]
+			[KIAS]
 				CHANGE_LOG.md
 				LICENSE*
 				NOTICE
@@ -56,6 +56,8 @@ The following file layout must be present after installation:
 
 * TweakScale /L 2.4.4 or later
 	+ **NOT** included
+* Kerbal Attachment System
+	+ **NOT** included 
 * Kerbal Inventory System
 	+ **NOT** included 
 * Module Manager 3.1.1 or later
