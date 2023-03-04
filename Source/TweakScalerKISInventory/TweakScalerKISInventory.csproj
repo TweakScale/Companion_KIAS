@@ -53,14 +53,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj">
-      <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
-      <Name>TweakScaleCompanion_KIS</Name>
-      <Private>False</Private>
-    </ProjectReference>
+    <Folder Include="Contract\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contract\" />
+    <ProjectReference Include="..\TweakScaleCompanion_KIAS\TweakScaleCompanion_KIAS.csproj">
+      <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
+      <Name>TweakScaleCompanion_KIAS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

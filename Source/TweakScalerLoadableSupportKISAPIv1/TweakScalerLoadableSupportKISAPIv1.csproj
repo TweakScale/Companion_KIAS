@@ -37,10 +37,6 @@
       <HintPath>..\..\..\..\..\..\..\LIB\managed\1.3.0\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="KIS">
-      <HintPath>..\..\..\..\..\..\..\LIB\plugins\KIS.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Scale">
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\Scale.dll</HintPath>
       <Private>False</Private>
@@ -53,6 +49,9 @@
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\KSPe.Light.TweakScale.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="KIS">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\1.4\KIS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,15 +59,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj">
-      <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
-      <Name>TweakScaleCompanion_KIS</Name>
-      <Private>False</Private>
-    </ProjectReference>
     <ProjectReference Include="..\TweakScalerKISInventory\TweakScalerKISInventory.csproj">
       <Project>{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}</Project>
       <Name>TweakScalerKISInventory</Name>
       <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TweakScaleCompanion_KIAS\TweakScaleCompanion_KIAS.csproj">
+      <Project>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</Project>
+      <Name>TweakScaleCompanion_KIAS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

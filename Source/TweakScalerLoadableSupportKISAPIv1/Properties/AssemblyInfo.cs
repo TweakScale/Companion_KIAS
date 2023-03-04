@@ -7,10 +7,10 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("TweakScaleKISLoadableSupport12")]
 [assembly: AssemblyDescription("Loadable KIS 1.2x Support for TweakScalerKIS Modules")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany(TweakScaleCompanion.KIS.LegalMamboJambo.Company)]
-[assembly: AssemblyProduct(TweakScaleCompanion.KIS.LegalMamboJambo.Product)]
-[assembly: AssemblyCopyright(TweakScaleCompanion.KIS.LegalMamboJambo.Copyright)]
-[assembly: AssemblyTrademark(TweakScaleCompanion.KIS.LegalMamboJambo.Trademark)]
+[assembly: AssemblyCompany(TweakScaleCompanion.KIAS.LegalMamboJambo.Company)]
+[assembly: AssemblyProduct(TweakScaleCompanion.KIAS.LegalMamboJambo.Product)]
+[assembly: AssemblyCopyright(TweakScaleCompanion.KIAS.LegalMamboJambo.Copyright)]
+[assembly: AssemblyTrademark(TweakScaleCompanion.KIAS.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
 // Version information for an assembly consists of the following four values:
@@ -23,8 +23,8 @@ using System.Runtime.CompilerServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion(TweakScaleCompanion.KIS.Version.Number)]
-[assembly: AssemblyFileVersion(TweakScaleCompanion.KIS.Version.Number)]
-[assembly: KSPAssembly("TweakScaleKISLoadableSupport12", TweakScaleCompanion.KIS.Version.major, TweakScaleCompanion.KIS.Version.minor)]
-[assembly: KSPAssemblyDependency("TweakScaleCompanion_KIS", TweakScaleCompanion.KIS.Version.major, TweakScaleCompanion.KIS.Version.minor)]
+[assembly: AssemblyVersion(TweakScaleCompanion.KIAS.Version.Number)]
+[assembly: AssemblyFileVersion(TweakScaleCompanion.KIAS.Version.Number)]
+[assembly: KSPAssembly("TweakScaleKISLoadableSupport12", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
+[assembly: KSPAssemblyDependency("TweakScaleCompanion_KIS", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
 [assembly: KSPAssemblyDependency("KSPe.Light.TweakScale", 2, 4)]

@@ -1,10 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScaleCompanion_KIS", "Source\TweakScaleCompanion_KIS\TweakScaleCompanion_KIS.csproj", "{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScaleCompanion_KIAS", "Source\TweakScaleCompanion_KIAS\TweakScaleCompanion_KIAS.csproj", "{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScalerKISInventory", "Source\TweakScalerKISInventory\TweakScalerKISInventory.csproj", "{E69FEB95-F31A-4FFC-9F07-E3335993E7A8}"
 EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakScalerLoadableSupportKISAPIv1", "Source\TweakScalerLoadableSupportKISAPIv1\TweakScalerLoadableSupportKISAPIv1.csproj", "{2A3AE4A1-2578-4BB4-9976-887EEE9B18AE}"
 EndProject
 Global

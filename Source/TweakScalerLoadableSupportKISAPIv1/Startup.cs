@@ -23,7 +23,7 @@
 using KSPe.Annotations;
 using UnityEngine;
 
-namespace TweakScaleCompanion.KIS
+namespace TweakScaleCompanion.KIAS
 {
 	internal class Startup : MonoBehaviour
 	{
