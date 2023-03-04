@@ -26,5 +26,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyVersion(TweakScaleCompanion.KIAS.Version.Number)]
 [assembly: AssemblyFileVersion(TweakScaleCompanion.KIAS.Version.Number)]
 [assembly: KSPAssembly("TweakScaleKISLoadableSupport12", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
-[assembly: KSPAssemblyDependency("TweakScaleCompanion_KIS", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
+[assembly: KSPAssemblyDependency("TweakScaleCompanion_KIAS", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
 [assembly: KSPAssemblyDependency("KSPe.Light.TweakScale", 2, 4)]

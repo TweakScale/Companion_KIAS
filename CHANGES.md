@@ -1,4 +1,4 @@
-# TweakScale Companion :: Kerbal Inventory System (KIS) :: Changes
+# TweakScale Companion :: Kerbal Inventory & Attachment Systems (KIAS) :: Changes
 
 * 2022-0502: 1.0.0.2 (LisiasT) for KSP >= 1.3.0
 	+ Fixes a NRE that was happening due the new TweakScale's "Upgrade Pipeline".
