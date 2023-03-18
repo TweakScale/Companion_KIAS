@@ -45,6 +45,13 @@ namespace TweakScaleCompanion.KIAS
 			}
 
 			this.checkDependencies();
+			this.checkConflicts();
+		}
+
+		private void checkConflicts()
+		{
+			if (KSPe.Util.SystemTools.Assembly.Exists.ByName("TweakScaleCompanion-KIS") || System.IO.Directory.Exists(KSPe.IO.Hierarchy.GAMEDATA.Solve("TweakScaleCompanion", "KIS")))
+				GUI.ConflictShowStopperAlertBox.Show("Deprecated TweakScale Companion for Kerbal Inventory System (KIS)");
 		}
 
 		private void checkDependencies()

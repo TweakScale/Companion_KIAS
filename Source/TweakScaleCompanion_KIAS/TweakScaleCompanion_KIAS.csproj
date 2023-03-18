@@ -53,6 +53,7 @@
     <Compile Include="GUI\ShowStopperAlertBox.cs" />
     <Compile Include="GUI\UnmetRequirementsShowStopperAlertBox.cs" />
     <Compile Include="Properties\LegalMamboJambo.cs" />
+    <Compile Include="GUI\ConflictShowStopperAlertBox.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Version.tt">
