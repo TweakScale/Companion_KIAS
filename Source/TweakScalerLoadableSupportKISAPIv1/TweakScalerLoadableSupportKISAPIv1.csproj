@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="KIS">
       <HintPath>..\..\..\..\..\..\..\LIB\plugins\1.4\KIS.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

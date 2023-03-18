@@ -8,6 +8,8 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory & Attachment System
 To install, place the GameData folder inside your Kerbal Space Program folder:
 
 * **REMOVE ANY OLD VERSIONS OF THE PRODUCT BEFORE INSTALLING**, including any other fork:
+	+ Delete `<KSP_ROOT>/GameData/TweakScaleCompanion/KIS`
+		- If still existent. 
 	+ Delete `<KSP_ROOT>/GameData/TweakScaleCompanion/KIAS`
 * Extract the package's `GameData/` folder into your KSP's as follows:
 	+ `<PACKAGE>/GameData/TweakScaleCompanion/KIAS` --> `<KSP_ROOT>/GameData/TweakScaleCompanion`
@@ -54,7 +56,7 @@ The following file layout must be present after installation:
 
 ### Dependencies
 
-* TweakScale /L 2.4.4 or later
+* TweakScale /L 2.4.7 or later
 	+ **NOT** included
 * Kerbal Attachment System
 	+ **NOT** included 

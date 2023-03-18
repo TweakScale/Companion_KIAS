@@ -6,7 +6,7 @@
     <ProjectGuid>{D4B8CD18-B2B1-43CE-87AB-A0BB315A2A31}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>TweakScaleCompanion_KIS</RootNamespace>
-    <AssemblyName>TweakScaleCompanion_KIS</AssemblyName>
+    <AssemblyName>TweakScaleCompanion_KIAS</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <BaseIntermediateOutputPath>..\..\obj\TweakScaleCompanion_KIS</BaseIntermediateOutputPath>
   </PropertyGroup>
