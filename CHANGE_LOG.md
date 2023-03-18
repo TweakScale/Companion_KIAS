@@ -1,5 +1,10 @@
-# TweakScale Companion :: Kerbal Inventory System (KIS) :: Change Log
+# TweakScale Companion :: Kerbal Inventory & Attachment Systems (KIAS) :: Change Log
 
+* 2023-0318: 1.1.0.0 (LisiasT) for KSP >= 1.3.0
+	+ Rebrands the thing to "KIAS"
+		- KAS was supposed to be added by now, but RealLife™ said "no".
+	+ Removes deprecated calls to KSPe. Minimum target is v2.5 now.
+	+ Renders it compatible to TweakScale 2.4.7.0 and superior only.
 * 2022-0502: 1.0.0.2 (LisiasT) for KSP >= 1.3.0
 	+ Fixes a NRE that was happening due the new TweakScale's "Upgrade Pipeline".
 	+ Closes issues:
