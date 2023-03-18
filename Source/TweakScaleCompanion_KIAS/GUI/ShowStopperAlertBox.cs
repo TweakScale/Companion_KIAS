@@ -25,18 +25,19 @@ namespace TweakScaleCompanion.KIAS.GUI
 {
 	internal static class ShowStopperAlertBox
 	{
-		private static readonly string MSG = @"Unfortunately TweakScale Companion for KIS got {0} Exceptions while checking the sanity of your instalment. It's not safe to continue, this will probably corrupt your savegames!
+		private const string URL = "https://ksp.lisias.net/add-ons/TweakScaleCompanion/Support/KIAS/show-stopper";
+		private static readonly string MSG = @"Unfortunately TweakScale Companion KIAS got {0} Exceptions while checking the sanity of your instalment. It's not safe to continue, this will probably corrupt your savegames!
 
 The KSP.log is listing every compromised part(s) on your installment, look for lines with '[TweakScaleCompanion_KIAS] ERROR: ' on the log line. Be aware that the parts being reported are not the culprits, but the Screaming Victims. There's no possible automated fix for these.";
 
-		private static readonly string AMSG = @"call for help on the TweakScale Companion for KIS thread on the Forum (KSP will close). We will help you on diagnosing the Add'On that is troubling you. Publish your KSP.log on some file share service and mention it on the post";
+		private static readonly string AMSG = @"call for help on the TweakScale Companion for KIAS thread on the Forum (KSP will close). We will help you on diagnosing the Add'On that is troubling you. Publish your KSP.log on some file share service and mention it on the post";
 
 		internal static void Show(int failure_count)
 		{
 			KSPe.Common.Dialogs.ShowStopperAlertBox.Show(
 				string.Format(MSG, failure_count),
 				AMSG,
-				() => { Application.OpenURL("https://forum.kerbalspaceprogram.com/index.php?/topic/192216-*"); Application.Quit(); }
+				() => { KSPe.Util.CkanTools.OpenURL(URL); Application.Quit(); }
 			);
 			Log.detail("\"Houston, we have a Problem!\" was displayed");
 		}
