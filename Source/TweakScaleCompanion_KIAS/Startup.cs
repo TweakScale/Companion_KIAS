@@ -52,12 +52,12 @@ namespace TweakScaleCompanion.KIAS
 			try
 			{
 				AssemblyLoader.LoadedAssembly assembly = AssemblyLoader.loadedAssemblies.Where(a => a.assembly.GetName().Name == "Scale").First();
-				if (-1 == assembly.assembly.GetName().Version.CompareTo(new System.Version(2, 4, 6)))
-					GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.6 or superior");
+				if (-1 == assembly.assembly.GetName().Version.CompareTo(new System.Version(2, 4, 7)))
+					GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.7 or superior");
 			}
 			catch (Exception e) when (e is NullReferenceException || e is InvalidOperationException)
 			{
-				GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.6 or superior");
+				GUI.UnmetRequirementsShowStopperAlertBox.Show("TweakScale v2.4.7 or superior");
 			}
 		}
 	}

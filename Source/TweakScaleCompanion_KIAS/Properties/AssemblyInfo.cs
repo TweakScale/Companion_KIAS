@@ -39,4 +39,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion(TweakScaleCompanion.KIAS.Version.Number)]
 [assembly: AssemblyFileVersion(TweakScaleCompanion.KIAS.Version.Number)]
 [assembly: KSPAssembly("TweakScaleCompanion_KIAS", TweakScaleCompanion.KIAS.Version.major, TweakScaleCompanion.KIAS.Version.minor)]
-[assembly: KSPAssemblyDependency("KSPe.Light.TweakScale", 2, 4)]
+[assembly: KSPAssemblyDependency("KSPe.Light.TweakScale", 2, 5)]

@@ -24,6 +24,7 @@ using UnityEngine;
 
 namespace TweakScaleCompanion.KIAS
 {
+	[KSPAddon(KSPAddon.Startup.Instantly, true)]
 	internal class Startup : MonoBehaviour
 	{
 		[UsedImplicitly]

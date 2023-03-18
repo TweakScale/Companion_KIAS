@@ -37,7 +37,7 @@ namespace TweakScaleCompanion.KIS.Contract.Inventory
 
 		internal static Interface CreateFor(Part part)
 		{
-			Type type = KSPe.Util.SystemTools.TypeFinder.FindByInterface(typeof(Interface));
+			Type type = KSPe.Util.SystemTools.Type.Find.By(typeof(Interface));
 			ConstructorInfo ctor = type.GetConstructor(new[] { typeof(Part) });
 			return (Interface)ctor.Invoke(new object[] { part });
 		}
