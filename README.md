@@ -5,18 +5,18 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory System (KIS) and Ke
 
 ## In a Hurry
 
-* [Source](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS)
-	+ [Issue Tracker](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/issues)
+* [Source](https://github.com/TweakScale/Companion_KIAS)
+	+ [Issue Tracker](https://github.com/TweakScale/Companion_KIAS/issues)
 * Documentation
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/192216-tweakscale-companion-program/)
-	+ [Project's README](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/blob/master/README.md)
-	+ [Install Instructions](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/blob/master/INSTALL.md)
+	+ [Project's README](https://github.com/TweakScale/Companion_KIAS/blob/master/README.md)
+	+ [Install Instructions](https://github.com/TweakScale/Companion_KIAS/blob/master/INSTALL.md)
 	+ [Change Log](./CHANGE_LOG.md)
 	+ [Known Issues](./KNOWN_ISSUES.md)
 * Official Distribution Sites:
-	+ [Source and Binaries](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS) on GitHub.
-	+ [Latest Release](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/releases)
-		- [Binaries](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/Archive)
+	+ [Source and Binaries](https://github.com/TweakScale/Companion_KIAS) on GitHub.
+	+ [Latest Release](https://github.com/TweakScale/Companion_KIAS/releases)
+		- [Binaries](https://github.com/TweakScale/Companion_KIAS/Archive)
 
 
 ## Description
@@ -78,7 +78,7 @@ See [NOTICE](./NOTICE) for further copyright and trademarks notices.
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*/)
 	+ [CurseForge](https://kerbal.curseforge.com/projects/tweakscale)
 	+ [SpaceDock](https://spacedock.info/mod/127/TweakScale)
-	+ [GitHub](https://github.com/net-lisias-ksp/TweakScale)
+	+ [GitHub](https://github.com/TweakScale/TweakScale)
 * Kerbal Attachment System (KAS) ([IgorZ](https://forum.kerbalspaceprogram.com/index.php?/profile/155445-igorz/))
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/149848-minimum-ksp-version-18-kerbal-inventory-system-kis-v125/)
 	+ [CurseForge](https://www.curseforge.com/kerbal/ksp-mods/kerbal-attachment-system-kas)

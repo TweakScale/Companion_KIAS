@@ -2,10 +2,10 @@
 	"NAME"		: "TSCo-KIS was phased out! From now on, it's TSCo-KIAS!",
 
 	"NAME"		: "TweakScale Companion for Kerbal Inventory & Attachment Systems",
-	"URL"		: "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIAS/master/TweakScaleCompanion.KIAS.version",
-	"DOWNLOAD"	: "https://github.com/net-lisias-ksp/TweakScaleCompanion_KIAS/releases",
-	"CHANGE_LOG"	: "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIAS/master/CHANGE_LOG.md",
-	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/net-lisias-ksp/TweakScaleCompanion_KIAS/master/CHANGES.md",
+	"URL"		: "https://raw.githubusercontent.com/TweakScale/Companion_KIAS/master/TweakScaleCompanion.KIAS.version",
+	"DOWNLOAD"	: "https://github.com/TweakScale/Companion_KIAS/releases",
+	"CHANGE_LOG"	: "https://raw.githubusercontent.com/TweakScale/Companion_KIAS/master/CHANGE_LOG.md",
+	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/TweakScale/Companion_KIAS/master/CHANGES.md",
 	"VERSION":{
 		"MAJOR":999,
 		"MINOR":999,

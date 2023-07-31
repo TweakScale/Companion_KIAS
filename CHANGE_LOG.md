@@ -8,7 +8,7 @@
 * 2022-0502: 1.0.0.2 (LisiasT) for KSP >= 1.3.0
 	+ Fixes a NRE that was happening due the new TweakScale's "Upgrade Pipeline".
 	+ Closes issues:
-		- [#5](https://github.com/net-lisias-ksp/TweakScaleCompanion_KIS/issues/5) NRE when TweakScale dispatches OnRescale after upgrading a Scale Type that was changed on some patch 
+		- [#5](https://github.com/TweakScale/Companion_KIS/issues/5) NRE when TweakScale dispatches OnRescale after upgrading a Scale Type that was changed on some patch 
 * 2021-1010: 1.0.0.0 (LisiasT) for KSP >= 1.3.0
 	+ TSCo-KIS goes gold!!! **#HURRAY!!**
 	+ Refactoring using the new KSPe.Light.TweakScale v2.4 facilities to allow it to be safely installed on rigs without it.
@@ -21,7 +21,7 @@
 * 2020-0905: 0.0.2.1 BETA (LisiasT) for KSP >= 1.2.2
 	+ Fixing the dependency check code.
 * 2020-0718: 0.0.2.0 BETA (LisiasT) for KSP >= 1.2.2
-	+ Better (and safer) deactivation code using info gathered from [TweakScale](https://github.com/net-lisias-ksp/TweakScale/issues/125)
+	+ Better (and safer) deactivation code using info gathered from [TweakScale](https://github.com/TweakScale/TweakScale/issues/125)
 	+ Startup check for dependencies
 	+ Patches overhaul. Better maintainability, easier to cope with the [lint tool](https://github.com/net-lisias-ksp/ksp-tools-public). 
 	+ (Finally) implementing a listener to user changing the PAW.
