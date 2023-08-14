@@ -23,8 +23,8 @@ Adds (up to date) TweakScale /L patches for Kerbal Inventory System (KIS) and Ke
 
 **TweakScale Companion for Kerbal Inventory & Attachment Systems** adds (up to date) [TweakScale /L](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-ksp-141-tweakscale-under-lisias-management-24310-2019-1030/) support for:
 
-* [Kerbal Inventory System (KIS)](https://forum.kerbalspaceprogram.com/index.php?/topic/149848-*/)
-* [Kerbal Attachment System (KAS)](https://forum.kerbalspaceprogram.com/index.php?/topic/142594-*/)
+* Kerbal Inventory System (KIS)
+* Kerbal Attachment System (KAS)
 	+ (unreleased).
 
 ### How to Use
